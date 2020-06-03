@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
-                    <img class="img-fluid" class="" src="img/imagenes/1.jpg" />
+                    <img class="img-fluid lazy" data-src="img/avatar/1.jpg" />
                 </div>
                 <div class="col-sm-3">
                     <div class="">
@@ -88,8 +88,8 @@
     <section class="video">
         <div class="container">
             <video width="100%"  controls>
-                <source src="movie.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
+                <source data-src="movie.mp4" type="video/mp4">
+                <source data-src="movie.ogg" type="video/ogg">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -99,16 +99,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
-                    <img class="img-fluid" src="img/imagenes/1.jpg">
+                    <img class="img-fluid lazy" data-src="img/imagenes/1.jpg" />
                 </div>
                 <div class="col-sm-3">
-                    <img class="img-fluid" src="img/imagenes/2.jpg">
+                    <img class="img-fluid lazy" data-src="img/imagenes/2.jpg" />
                 </div>
                 <div class="col-sm-3">
-                    <img class="img-fluid" src="img/imagenes/3.jpg">
+                    <img class="img-fluid lazy" data-src="img/imagenes/3.jpg" />
                 </div>
                 <div class="col-sm-3">
-                    <img class="img-fluid" src="img/imagenes/4.jpg">
+                    <img class="img-fluid lazy" data-src="img/imagenes/4.jpg" />
                 </div>
             </div>
         </div>
@@ -126,5 +126,17 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+<script type="text/javascript"
+        src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.10/jquery.lazy.min.js"></script>
+<script type="text/javascript"
+        src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.10/jquery.lazy.plugins.min.js"></script>
+<script>
+    $( document ).ready(function() {
+        $(function($) {
+            $(".lazy").Lazy();
+        });
+    });
+</script>
+
 </body>
 </html>
